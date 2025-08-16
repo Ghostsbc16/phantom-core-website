@@ -4,9 +4,107 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Phantom Core™ | Lily AI</title>
-  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+  <style>
+    /* ===== General ===== */
+    body {
+      margin: 0;
+      font-family: 'Orbitron', sans-serif;
+      background: radial-gradient(circle at top, #0a0a0f 0%, #000 100%);
+      color: #e0f7ff;
+      text-align: center;
+    }
+
+    h1, h2 {
+      text-shadow: 0 0 10px #0ff, 0 0 20px #00faff;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    /* ===== Hero Section ===== */
+    .hero {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .logo {
+      width: 140px;
+      margin-bottom: 20px;
+      filter: drop-shadow(0 0 20px #0ff);
+    }
+
+    .tagline {
+      font-size: 1.3rem;
+      margin: 20px 0 40px;
+      color: #88ffff;
+    }
+
+    /* ===== Buttons ===== */
+    .btn {
+      display: inline-block;
+      padding: 12px 25px;
+      margin: 10px;
+      background: #00d4ff;
+      color: #000;
+      font-weight: bold;
+      border-radius: 5px;
+      transition: all 0.3s ease;
+    }
+
+    .btn:hover {
+      background: #0ff;
+      box-shadow: 0 0 20px #0ff;
+    }
+
+    .btn.alt {
+      background: transparent;
+      color: #0ff;
+      border: 2px solid #0ff;
+    }
+
+    /* ===== Sections ===== */
+    .section {
+      padding: 60px 20px;
+      background: rgba(0,0,0,0.7);
+    }
+
+    /* ===== Footer ===== */
+    footer {
+      padding: 20px;
+      font-size: 0.8rem;
+      color: #888;
+      background: #000;
+    }
+
+    /* ===== Cool Glowing Animation ===== */
+    .glow-orb {
+      position: absolute;
+      top: 20%;
+      width: 300px;
+      height: 300px;
+      border-radius: 50%;
+      background: radial-gradient(circle, #0ff 0%, transparent 70%);
+      animation: pulse 6s infinite alternate;
+      filter: blur(60px);
+      opacity: 0.4;
+      z-index: -1;
+    }
+
+    @keyframes pulse {
+      from { transform: scale(0.9); opacity: 0.3; }
+      to { transform: scale(1.1); opacity: 0.6; }
+    }
+  </style>
 </head>
 <body>
+  <!-- Glowing Orb Effect -->
+  <div class="glow-orb"></div>
+
   <!-- Hero Section -->
   <header class="hero">
     <img src="assets/logo.png" alt="Phantom Core Logo" class="logo">
@@ -16,37 +114,17 @@
     <a href="https://discord.gg/yourinvite" class="btn alt">Join Discord</a>
   </header>
 
-  <!-- About Section -->
+  <!-- About -->
   <section id="about" class="section">
     <h2>About Lily</h2>
     <p>Lily is an AI developed with LM Studio and Python, built by Phantom Core™. 
-       She is designed to explore the frontier of AI creativity and intelligence.</p>
-  </section>
-
-  <!-- Tech Section -->
-  <section id="tech" class="section">
-    <h2>Tech Stack</h2>
-    <ul>
-      <li>⚡ LM Studio (AI runtime)</li>
-      <li>🐍 Python (core logic)</li>
-      <li>💻 Phantom Core™ custom tools</li>
-    </ul>
-    <a href="https://github.com/yourgithubrepo" class="btn">View on GitHub</a>
-  </section>
-
-  <!-- Contact -->
-  <section id="contact" class="section">
-    <h2>Connect</h2>
-    <p>Join the Phantom Core™ network:</p>
-    <a href="https://discord.gg/yourinvite" class="btn">Discord</a>
-    <a href="https://github.com/yourgithub" class="btn alt">GitHub</a>
+       She explores the frontier of AI creativity and intelligence.</p>
   </section>
 
   <!-- Footer -->
   <footer>
     <p>© 2025 Phantom Core™. All Rights Reserved.</p>
   </footer>
-  
-  <script src="script.js"></script>
 </body>
 </html>
+
